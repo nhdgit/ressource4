@@ -11,7 +11,7 @@ app.get('/track-click', async (req, res) => {
     console.log(`Clic enregistré pour le client : ${key}`);
     
     // Appel au webhook Make.com
-    const webhookUrl = 'https://hook.eu2.make.com/u64ngani62prgtf88unznvv3kmj9hhsu';
+    const webhookUrl = 'https://hook.eu2.make.com/h6trxjeegri4ewe5zc8354a5fpgmex90';
     try {
       await axios.post(webhookUrl, { key });
       console.log('Webhook Make.com déclenché avec succès.');
